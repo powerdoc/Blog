@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif; */
+* {
+    box-sizing: border-box;    
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+.grid-container {
+    max-width: 98rem;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 14rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+header .header-icons-containers {
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-containers .icons {
+    width: 30rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 5rem;
+}
+header .header-icons-containers .icons span {
+    color: whitesmoke;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 9rem;
+}
+nav .nav-logo-container {
+    margin-left: 5rem;
+}
+nav .nav-logo-container img {
+    width: 22rem;
+    margin-top: 1rem;
+}
+nav .nav-profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+nav .nav-profile-link a {
+    color: black;
+    border-bottom: 0.1rem solid black;
+    font-weight: bold;
+}
+
+.home-main {
+    background-image: url(../assets/img/Cover.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-main .home-main-text {
+    color: white;
+    font-size: 4rem;
+    padding: 5%;
+    letter-spacing: 2rem;
+    /* font-family: 'Roboto Mono', monospace; */
+}
+
+.home-main .home-main-button {
+    padding: 1rem;
+    background-color: #47cfac;
+    color: black;
+    font-weight: 900;
+    border: 0.1rem solid black;
+}
+.home-main .home-main-button:hover {
+    background-color: #9ff0dd;
+    color: #058d5e;
+    /* cursor: pointer; */
+}
+
+
+
+
+/*<blogs>*/
+.blogs-main {
+    display: grid;
+}
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0 5rem 4rem;
+}
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-news-img-container{
+    grid-column: 1;
+}
+.blogs-news-img-container img {
+    width: 85%;
+}
+.blogs-news-info-container {
+    grid-column: 2;
+}
+.blogs-news-info-container p {
+    margin-bottom: 3.5rem;
+}
+.blogs-posts-container {
+    padding: 0 5rem 4rem;
+}
+.blogs-posts-container h3 {
+    border-bottom: 0.1rem solid #cdd2da;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.blogs-button {
+    border: 0.1rem solid #47cfac;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+.blogs-button:hover {
+    background-color: #9ff0dd;
+    color: #058d5e;
+}
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 1rem;
+    max-width: 30%;
+    margin-bottom: 5rem;
+}
+.blogs-posts-container .post-container p {
+    margin-bottom: 3.5rem;
+}
+.blogs-posts-container .post-container img {
+    width: 100%;
+    object-fit: fill;
+}
+
+
+.blogpost-img-container {
+    padding: 0 5rem 4rem;
+}
+.blogpost-img-container img {
+    width: 100%;
+}
+.blogpost-main-container {
+    padding: 0 5rem 4rem;
+}
+.blogpost-main-container h3 {
+    border-bottom: 0.1rem solid #cdd2da;
+    padding-bottom: 2rem;
+    margin-top: 0;
+}
+.blogpost-main-container article h1 {
+    font-size: 3.5rem;
+}
+
+.contact-main-container, .perfil-main-container {
+    width: 100%;
+    min-height: 25rem;
+    background-color: #e6e9ed;
+    text-align: center;
+    padding: 5rem;
+    /* display: flex; */
+    
+}
+.contact-main-container div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* align-self: center; */
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 49.5%; */
+}
+.contact-section .contact-section-img {
+    width: 8rem;
+    margin-bottom: 3rem;
+}
+
+.contact-section .contact-section-img img{
+    width: 100%;
+    
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.contact-info a {
+    align-self: flex-start;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid black;
+    
+}
+.contact-info p {
+    margin-top: 1rem;
+}
+
+/* .perfil-main-container {
+    width: 100%;
+    min-height: 25rem;
+    background-color: #e6e9ed;
+    text-align: center;
+} */
+.perfil-main-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+/* .perfil-main-img {
+    width: 85rem;
+} */
+.perfil-main-img img {
+    /* width: 100%; */
+    width: 32rem;
+} 
+.perfil-main-information {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    text-align: left;    
+}
+
+.perfil-main-information h1 {
+    align-self: flex-start;
+    font-size: 3.2rem;
+}
+
+.perfil-main-information p {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.perfil-projects-section {
+    background-color: whitesmoke;
+    padding: 3rem;
+}
+.perfil-projects-section div h1 {
+    text-align: center;
+    border-bottom: 0.1rem solid #cdd2da;
+    padding-bottom:3rem ;
+}
+.perfil-projects-container {
+    /* display: flex;    
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+/* .perfil-project { */
+    /* padding: 1rem; */
+    /* max-width: 33.33%; */
+/* } */
+
+.perfil-project h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.perfil-project p {
+    font-size: 1.8rem;
+}
+
+footer {
+    width: 100%;
+    height: 8rem;
+    background-color: #22272d;
+    border-top: 3.5rem solid #47cfac;
+    text-align: center;
+    
+}
+
+footer p {
+    color: white;
+    /* margin-top: 3rem; */
+}
+
+/*</blogs>*/
